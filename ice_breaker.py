@@ -25,7 +25,7 @@ def ice_break_with(name: str) -> str:
 
     llm = AzureChatOpenAI(temperature=0, model_name="gpt-4o-mini")
 
-    chain = summary_prompt_template | llm
+    chain = summary_prompt_template | llm | StrOutputParser()
 
     res = chain.invoke(input={"information": linkedin_data})
 
@@ -35,4 +35,4 @@ def ice_break_with(name: str) -> str:
 if __name__ == "__main__":
 
     print("Ice Breaker Enter")
-    ice_break_with(name="Sagar Pandey")
+    ice_break_with(name="Eden Marco")

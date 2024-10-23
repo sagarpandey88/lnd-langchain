@@ -5,4 +5,4 @@ def get_profile_url_tavily(name: str):
     # """Searches for Linkedin or Twitter Profile Page."""
     # search = TavilySearchResults()
     # res = search.run(f"{name}")
-    return "https://www.linkedin.com/in/sagarpandey88/"
+    return "https://www.linkedin.com/in/eden-marco/"
